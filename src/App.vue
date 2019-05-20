@@ -1,7 +1,38 @@
 <template>
   <div id="app">
     <mt-button @click.native="handleClick">按钮</mt-button>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+
+    <mt-tab-container v-model="selected">
+      <mt-tab-container-item id="tab1">
+        tab-container1 外卖
+      </mt-tab-container-item>
+      <mt-tab-container-item id="tab2">
+        tab-container2 订单
+      </mt-tab-container-item>
+      <mt-tab-container-item id="tab3">
+        tab-container3 发现
+      </mt-tab-container-item>
+      <mt-tab-container-item id="tab4">
+        tab-container4 我的
+      </mt-tab-container-item>
+    </mt-tab-container>
+
+    <mt-tabbar v-model="selected">
+      <mt-tab-item id="tab1">
+        外卖
+      </mt-tab-item>
+      <mt-tab-item id="tab2">
+        订单
+      </mt-tab-item>
+      <mt-tab-item id="tab3">
+        发现
+      </mt-tab-item>
+      <mt-tab-item id="tab4">
+        我的
+      </mt-tab-item>
+    </mt-tabbar>
+     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -12,6 +43,11 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      selected: 'tab1'
+    };
   },
   methods: {
     handleClick: function() {

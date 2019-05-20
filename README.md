@@ -21,6 +21,11 @@ new Vue({
 })
 ```
 
+[Tabbar](https://mint-ui.github.io/docs/#/zh-cn2/tabbar) 底部選項卡，點擊 tab 會切換顯示的頁面。依賴 tab-item 組件。
+搭配 [tab-container](https://mint-ui.github.io/docs/#/zh-cn2/tab-container) 組件使用  
+ex [mint-ui之tabbar使用](https://www.cnblogs.com/zhaozhenzhen/p/8422261.html)  
+
+
 ## vue cli
 
 [Vue CLI](https://cli.vuejs.org/zh/) 
