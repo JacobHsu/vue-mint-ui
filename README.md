@@ -25,6 +25,8 @@ new Vue({
 搭配 [tab-container](https://mint-ui.github.io/docs/#/zh-cn2/tab-container) 組件使用  
 ex [mint-ui之tabbar使用](https://www.cnblogs.com/zhaozhenzhen/p/8422261.html)  
 
+`<a class="mint-tab-item is-selected"></a>`  `<a class="mint-tab-item"></a>` 切換class會加 `is-selected`    
+`mint-ui/lib/style.css` 樣式可追至`.mint-navbar .mint-tab-item.is-selected {`  
 
 ## vue cli
 
