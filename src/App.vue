@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <mt-button @click.native="handleClick">按钮</mt-button>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -12,6 +12,11 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  methods: {
+    handleClick: function() {
+      this.$toast('Hello world!')
+    }
   }
 }
 </script>
